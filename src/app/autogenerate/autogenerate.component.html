@@ -1,0 +1,43 @@
+<p>Auto Genetarated Team</p>
+<!-- <div>
+  <button mat-raised-button class="example-add-tab-button" (click)="addTab()">
+    Add new tab
+  </button>
+</div> -->
+
+<mat-tab-group>
+  <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+
+    <div class="cardGroup">
+      <mat-card class="card" *ngFor="let serviceprovider of serviceproviders;let index=index">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{serviceprovider.name}}</mat-card-title>
+          <mat-card-subtitle>Java Devloper</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            Description of suresh
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button type="button" color="btn btn-success" mat-button (click)="removeCard(index)">Accept</button>
+          <button type="button" color="btn btn-success" mat-button (click)="removeCard(index)">Reject</button>
+        </mat-card-actions>
+      </mat-card>
+      <!-- <mat-card>
+        <mat-card-header>card1</mat-card-header>
+      </mat-card> -->
+    </div>
+    <!-- <button mat-raised-button class="example-delete-tab-button" [disabled]="tabs.length === 1"
+      (click)="removeTab(index)">
+      Delete Tab
+    </button> -->
+    <button mat-raised-button class="Close" >Close</button>
+  </mat-tab>
+</mat-tab-group>
+
+<!-- <h2>ServiceProvider List</h2>
+<ul *ngFor="let serviceprovider of serviceproviders">
+  <li>{{serviceprovider.name}}   {{serviceprovider.mobilenumber}}</li>
+</ul> -->

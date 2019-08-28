@@ -1,0 +1,142 @@
+<form class="ideadetails" *ngIf="isLoaded">
+    <h1>Idea Details</h1><br>
+    <!-- project title starts -->
+    <h6>Project Title :</h6>
+    <mat-form-field>
+      <input matInput placeholder="Project Title">
+      <mat-hint align="start"><strong>You have to enter the Title</strong> </mat-hint>
+    </mat-form-field>
+    <!-- project title ends -->
+  ​
+    <!-- project description starts -->
+    <h6>Project Description :</h6>
+    <mat-form-field>
+      <textarea matInput placeholder="Project Description"></textarea>
+    </mat-form-field>
+    <!-- project description ends -->
+  ​
+    <!-- project duration starts -->
+    <h6>Duration :</h6>
+    <table class="duration" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput placeholder="Duration" type="number">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="selectedduration">
+            <mat-label>Select</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="Year">Year</mat-option>
+              <mat-option value="Month">Month</mat-option>
+              <mat-option value="Days">Days</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <!-- project duration ends -->
+  ​
+  ​
+  ​
+    <!-- domain starts -->
+    <h6>Domain :</h6>
+        <mat-form-field>
+        <mat-label>Domain</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let domain of domains" [value]="domain.name">
+            {{domain.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    <!-- domain ends -->
+  ​
+    <!-- subdomain starts -->
+    <h6>SubDomain :</h6>
+        <mat-form-field>
+        <mat-label>SubDomain</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let subdomain of subdomains" [value]="subdomain.name">
+            {{subdomain.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    <!-- subdomain ends -->
+    
+    <!-- role starts -->
+    <h6>Role :</h6>
+    <table class="role">
+      <thead class="threadclass">
+        <tr>
+          <th>RoleName</th>
+          <th>Skills</th>
+          <th>NoOfPeople</th>
+          <th>Experience</th>
+        </tr>
+      </thead>
+      <tbody class="rolebody">
+        <tr *ngFor="let field of fieldArray; let i = index">
+          <td>
+            <input [(ngModel)]="field.rolename" class="form-control" type="text" name="{{field.rolename}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="field.skills" class="form-control" type="text" name="{{field.skills}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="field.noofpeople" class="form-control" type="number" name="{{field.noofpeople}}" />
+          </td>
+          <td>
+            <input [(ngModel)]="field.experience" class="form-control" type="text" name="{{field.experience}}" />
+          </td>
+          <td>
+            <button class="btn btn-default" type="button" (click)="deleteFieldValue(i)">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="form-control" type="text" id="newAttributerolename" [(ngModel)]="newAttribute.rolename"
+              name="newAttributerolename" />
+          </td>
+          <td>
+            <input class="form-control" type="text" id="newAttributeskills" [(ngModel)]="newAttribute.skills"
+              name="newAttributeskills" />
+          </td>
+          <td>
+            <input class="form-control" type="text" id="newAttributenoofpeople" [(ngModel)]="newAttribute.noofpeople"
+              name="newAttributenoofpeople" />
+          </td>
+          <td>
+            <input class="form-control" type="text" id="newAttributeexperience" [(ngModel)]="newAttribute.experience"
+              name="newAttributeexperience" />
+          </td>
+  ​
+          <td>
+            <button class="btn btn-default" type="button" (click)="addFieldValue()">Add</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- role ends -->
+    
+  <!-- lacation starts -->
+    <h6>Location :</h6>
+    <mat-form-field class="location">
+      <input matInput placeholder="Location">
+    </mat-form-field>
+    <!-- location ends -->
+  ​
+  ​
+    <!-- cost starts -->
+    <h6>Cost :</h6>
+    <mat-form-field>
+      <input matInput placeholder="Cost" type="number">
+      <span matPrefix>$&nbsp;</span>
+      <span matSuffix>.00</span>
+    </mat-form-field>
+    <!-- cost ends -->
+  ​
+    <button mat-button class="btn btn-primary" type="submit"  (click)=toNavigate()>Submit</button>
+  ​
+  </form>

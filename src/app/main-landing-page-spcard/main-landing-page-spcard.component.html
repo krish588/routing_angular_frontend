@@ -1,0 +1,37 @@
+<app-sp-navbar></app-sp-navbar>
+<app-ihsidebar></app-ihsidebar>
+
+<h1>Our Top Service Providers</h1>
+<!--
+<div class="container-fluid" >
+    <div class="card-deck" > -->
+        <!-- Card -->
+
+        <mdb-card *ngFor="let item of details">
+
+
+            <!-- Card img -->
+
+            <mdb-card-img src={{item.image}} alt="Card image cap"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+
+          <!--Card content-->
+          <mdb-card-body>
+            <!--Title-->
+            <mdb-card-title>
+              <h4>{{item.Name}}</h4>
+            </mdb-card-title>
+
+            <!--Text-->
+            <mdb-card-text> {{item.skills}}
+            </mdb-card-text>
+
+            <button (click)="getUser()" mdbBtn color="primary" mdbWavesEffect>Show Details</button>
+          </mdb-card-body>
+        </mdb-card>
+      <!-- </div>
+      </div> -->
+      <app-index-page-footer></app-index-page-footer>
+

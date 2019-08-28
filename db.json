@@ -1,0 +1,39 @@
+{
+  "spDetails": [
+    {
+      "id": 1,
+      "image": "assets/images/1.jpeg",
+      "Name": "Aniket",
+      "Profile": "java developer",
+      "skills": "java, spring-boot,docker"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/1.jpeg",
+      "Name": "shiv",
+      "Profile": "Financial analyst",
+      "skills": "accounting, finance management"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/1.jpeg",
+      "Name": "Raju",
+       "Profile": "Angular developer",
+      "skills": "Html,css,typescript,angular 7"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/1.jpeg",
+      "Name": "atul",
+      "Profile": "Full stack developer",
+      "skills": "angular 7, spring-boot"
+    },
+    {
+      "id": 10,
+      "image": "assets/images/1.jpeg",
+      "Name": "shdfdfdfdfiv",
+      "Profile": "Financial analyst",
+      "skills": "accounting, finaffdnce management"
+    }
+  ]
+}

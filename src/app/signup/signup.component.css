@@ -1,0 +1,118 @@
+.sign-up-outer { 
+ margin: 35px auto;
+ background: #2c3e50;
+ height: 600px;
+ width: 80%;
+ border-radius: 35px;
+}
+
+.sign-up-card {
+  height: 100%;
+  width: 40%;
+  background-color: #2574a9;
+  float: right;
+  border-radius: 35px;
+  
+}
+
+.demo-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.example-container > * {
+  width: 100%;
+  
+}
+span , .title-text {
+  font-family: 'Audiowide', cursive;
+  padding-top: 190px;
+}
+
+#y {
+  font-size: 40px;
+}
+.title-text {
+  margin-left: 130px;
+  color: rgb(255, 255, 255);
+  float: left;
+  
+}
+span {
+  color: #3498d8;
+}
+
+#textbox {
+  border-radius: 20px;
+}
+
+.signup-container , .sign-up-card h3 {
+  margin-top: 20px;
+  font-family: 'Manjari', sans-serif;
+}
+.sign-up-card h3 {
+  text-align: center;
+}
+.btn-signup {
+  border: 2px solid #c5eff7;
+  background: none;
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 15px;
+  
+}
+#signup-logo {
+  margin-left: 137px;
+  padding-top: 20px;
+  font-size: 90px;
+  
+}
+.fal, #signup-logo, .btn-signup, .signup-container , .sign-up-card h3 {
+  color: aliceblue;
+}
+.far, #x {
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .sign-up-outer { 
+    background: #2c3e50;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+   }
+  .sign-up-card {
+    height: 100%;
+    width: 100%;
+    background-color: #2574a9;
+    border-radius: 35px;
+    
+  }
+  #signup-logo {
+    margin-left: 110px;
+    padding-top: 20px;
+    font-size: 80px;
+    
+  }
+  span , .title-text {
+    font-family: 'Audiowide', cursive;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  #y {
+    font-size: 16px;
+  }
+  #z {
+    font-size: 12px;
+  }
+
+  .title-text {
+    margin-left: 55px;
+    color: rgb(255, 255, 255);
+    
+  }
+}

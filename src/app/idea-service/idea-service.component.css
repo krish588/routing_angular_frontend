@@ -1,0 +1,80 @@
+.ideadetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: auto;
+    background-color: #05788a;
+    }
+  .ideadetails > * {
+    width: 500px;
+    margin-left: 400px;
+    font-size: 17px;
+    margin-bottom: 10px;
+ }
+ .ideadetails h6 {
+    font-size: 25px;
+    color:rgb(23, 29, 58);
+    }
+ .ideadetails h1{
+   text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    }
+ .selectedduration {
+    width:80%;
+ }
+ .duration {
+    width: 50%;
+ }
+ .form-full-width {
+ width: 100%;
+ }
+ .threadclass tr {
+    font-size: 18px;
+    margin-top: 5px;
+ }
+ .rolebody input{
+        width:85%;
+        }
+ .form-control {
+            background-color: #007788;
+        }
+ @media screen and (max-width: 600px){
+    .ideadetails {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        background-color: #007788;
+    }
+  .ideadetails > * {
+    width: 75%;
+    margin-top: 3px;
+    margin-left: 40px;
+    font-size: 22px;
+ }
+ .ideadetails h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    }
+ .ideadetails h6 {
+    font-size: 25px;
+    color:#2B3252;
+    }
+ .selectedduration {
+    width:39%;
+ }
+ .form-full-width {
+    width: 100%;
+    }
+ .threadclass tr {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+        .rolebody input{
+            width:85%;
+        }
+    .form-control {
+            background-color: #007788;
+        }
+ }

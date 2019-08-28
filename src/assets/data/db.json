@@ -1,0 +1,18 @@
+{
+    "ServiceProvider":[
+        {
+            "id": 1,
+            "name": "Severus Snape",
+            "mobileNo": 9876543210,
+            "email": "snape@potter.com",
+            "domain": "IT",
+            "role": "Java developer",
+            "skills": ["java",".net"],
+            "previousProjects": ["xyz.com/project1","abc.com/p2"],
+            "cost":"$100/week",
+            "currentLocation": "hogwarts",
+            "preferredLocation": "private drive"
+        }
+    ]
+    
+}

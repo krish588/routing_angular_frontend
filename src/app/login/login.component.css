@@ -1,0 +1,90 @@
+
+/* form {
+    
+    border: 1px solid black;
+    width: 60%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+  
+  }
+
+  body{
+    background-color:white;
+  }
+  .container-fluid{
+      height: 100%;
+      width: 80%;
+
+      background-color:blue;
+  } */
+  #fluid{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 50px;
+    background-image: url("../../assets/img/bg-img.jpg");
+    height: 200%;
+}
+.container-fluid{
+  height: 100%;
+}
+
+#ninja{
+  padding: 101px;
+  height: 450px;
+  background: rgb(32, 39, 54);
+  color:white;
+}
+#ninja-para{
+  color: aliceblue;
+}
+/* #fluid{
+    margin-right: 220px;
+} */
+.danger-bg {
+  margin-left: 200px; 
+  margin-right: 230px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  left:415px;
+  bottom:365px ;
+  background-color: #5ba0d0;
+  
+  
+}
+.form-group{
+  margin-left: -65px;
+  margin-right: -65px;
+  
+}
+
+.links{
+    width:80%;
+}
+
+.heading{
+color:black;
+}
+@media screen and (max-width: 600px) {
+  .danger-bg {
+    background: #2c3e50;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+   }
+  .danger-bg{
+    height: 100%;
+    width: 100%;
+    background-color: #2574a9;
+    border-radius: 35px;
+
+  }
+
+}
+
+
+

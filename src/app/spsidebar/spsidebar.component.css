@@ -1,0 +1,13 @@
+
+.sidebar-card{
+    width: 20%;
+    height: 650px;
+    background:gray;
+    float: left;
+  }
+.screen{
+    width: 80%;
+    height: 650px;
+    float: right;
+    background-color: aliceblue;
+  }
